@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+
+    <!-- BOOTSTRAP 5 CSS  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- css  -->
+    <link rel="stylesheet" href="./user-full-name.css">
+
+</head>
+
+<body>
+    <div class="signup-page">
+        <header class="signup-title">
+            <a href="./signup-page.html" class="arrow-left">
+                <img src="./signup-images/Arrow - Left.jpg" alt="previous-page" />
+            </a href="#">
+            <span class="signup-name">Signup</span>
+        </header>
+        <form action="./create-password.html" class="user-regi">
+            <input type="text" name="Full-name" placeholder="Full Name" class="user-full-name" />
+            <input type="text" class="user-name" id="userName" placeholder="User Name" />
+            <span class="valid-user-name">
+                <img class="check-mark" src="./signup-images/Check.jpg" />
+            </span>
+            <p class="invalid-user-name mt-2">Username already exists. Try again!</p>
+            <button type="submit" class="continue-button">Continue</button>
+        </form>
+        <div class="end-line">
+            <hr class="horizontal-line">
+            OR
+            <hr class="horizontal-line">
+        </div>
+        <button class="signup-google">
+            <img src="./signup-images/google-icon.jpg" alt="google-icon">
+            Sign up with Google
+        </button>
+        <p>Already have an account?
+            <a href="#" class="Login">Login</a>
+        </p>
+    </div>
+
+    <!-- JQUERY SCRIPT -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <!-- BOOTSTRAP JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- custom js -->
+    <script src="./user-full-name.js"></script>
+    <script src="./gettingstarted.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('http://fonts.googleapis.com/css?family=Lato:400;500;700');
+@media only screen and (max-width:1440px) {
+  html{
+   display: none;
+  }
+}
+@media only screen and (max-width: 460px) {
+  html{
+    display: block;
+   }
+* {
+    box-sizing: border-box !important;
+  } 
+body {
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+
+
+  /* INTERESTED MOBILE ONLY STYLES */
+.friend-suggestions-mobile {
+  margin: 15% 0 0 0;
+	background: #fff none repeat scroll 0 0;
+	cursor: pointer;
+  font-family: 'Lato', sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.friend-suggestions-mobile .no-of-interested  {
+  font-size: 1rem;
+  cursor:pointer;
+}
+
+ .friend-suggestions-mobile-details , .friend-suggestions-mobile-person {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.friend-suggestions-mobile-top-bar {
+  display: flex;
+  align-items: center;
+  background: #fff;
+}
+
+.friend-suggestions-mobile-top-bar .friend-suggestions-mobile-heading {
+    font-size: 1.125rem;
+    margin-left: 2%;
+    font-weight: 500;
+}
+
+
+.friend-suggestions-mobile-credentials .username {
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+.friend-suggestions-mobile-credentials .name {
+  font-weight: 300;
+  font-size: 1rem;
+  color: rgba(52, 52, 52, 0.6);
+}
+
+.friend-suggestions-mobile-dp img {
+  border-radius: 50%;
+}
+
+.friend-suggestions-mobile-person-follow-btn .follow-btn {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 0.875rem;
+    color: #fff;
+    background: #4b0082;
+    border-radius:5px;
+}
+
+.friend-suggestions-mobile-person-follow-btn .follow-btn.active {
+    color: #4b0082;
+    font-weight: 500;
+    background: #fff;
+    border: 1px solid #4b0082;
+    border-radius:5px;
+}
+.nav-buttons{
+    background: #FFFFFF;
+    padding-right: var(--bs-gutter-x,.75rem);
+    padding-left: var(--bs-gutter-x,.75rem);
+    display: flex;
+    justify-content: space-between;
+}
+.skip-button,.next-button{
+    width: 50%;
+    background: #4b0082;
+    font-family: "Inter", "sans-serif";
+    font-weight: 500;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 4vw 0px;
+    border: 1px solid #4B0082;
+  }
+  .skip-button{
+    background: #FFFFFF;
+    border: 1px solid #ACA1B5;
+    color: #ACA1B5;
+  }
+}

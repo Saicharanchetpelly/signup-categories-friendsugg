@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap");
+@media only screen and (max-width:1440px) {
+  html{
+   display: none;
+  }
+}
+@media only screen and (max-width: 460px) {
+  html{
+    display: block;
+   }
+* {
+    box-sizing: border-box !important;
+  }
+  :root {
+    --clr-light: #fff;
+    --clr-primary: #4b0082;
+    --clr-dark: #07000c;
+    --clr-light-grey: #aca1b5;
+    --font-bold: 500;
+  }
+  html{
+     font-size:0.875rem;
+     font-family: "Inter", "sans-serif";
+   }
+  
+  body {
+    position: relative;
+  }
+  .getting-started-page,.denaurlen-home-page{
+    display: flex;
+    flex-direction: column;
+  
+  }
+  .denaurlen-logo{
+      margin: 15% 0 45% 0;
+      align-self: center;
+     
+  }
+  .denaurlen-logo-gif{
+    display: flex;
+  }
+  .denaurlen-logo-gif >img{
+ 
+    margin: 15% 25% 45% 25%;
+    width: 53%;
+    
+  }
+  .home-page-logo{
+    margin: 50% 0 50% 0;
+  }
+  .button,.input{
+    width: 100%;
+    background: #4b0082;
+    font-family: "Inter", "sans-serif";
+    font-weight: 500;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 4vw 0px;
+    border: 1px solid #4B0082;
+  }
+  .terms-privacy,
+  .forgot-login-details,
+  .otp-resend-statement,
+  .line-or-line,
+  .create-account,
+  .create-password-details{
+    color: #ACA1B5;
+    text-align: center;
+  }
+.line-or-line{
+  display: flex;
+  align-items: center;
+  
+}
+.line-or-line >img{
+  width: 40vw;
+  height: auto;
+}
+.login-title,
+.forgot-password-title,
+.create-password-title{
+  display: flex;
+  justify-content: space-between;
+}
+.login-title >img,
+.forgot-password-title >img,
+.create-password-title >img{
+ width: 7.4vw;
+ height: auto;
+}
+.login-title p,
+.forgot-password-title p,
+.create-password-title p{
+  margin-bottom: 0px !important;
+  align-items: center;
+  color: #07000C;
+
+}
+
+.eye-icon{
+  position: absolute;
+  left:80.67vw;
+  top:15.7%;
+  cursor: pointer;
+}
+
+.message{
+  color: #E74C3C;
+}
+.create-an-account-txt,
+.forgot-login-details a,
+.resend-otp{
+  text-decoration: none;
+}
+#validatePassword{
+  color: #E74C3C;
+}
+.successful-password-popup {
+  background: rgba(0, 0, 0, 0.6) none repeat scroll 0 0;
+  display: inline-block;
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  visibility: hidden;
+  width: 100%;
+  z-index: 999999;
+  transition: all 0.2s linear 0.1s;
+  border-radius: 10px;
+}
+.successful-password-popup.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.successful-password-popup-options {
+  background:  #FFFFFF none repeat scroll 0 0;
+  left: 50%;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  visibility: hidden;
+  width: 75%;
+  height: 50%;
+  transition: all 0.3s linear 0.1s;
+  color:  #07000C;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+.successful-password-popup-des {
+  font-family: "Inter", "sans-serif";
+  font-weight: 500;
+}
+
+.tick-image {
+  height: 5rem;
+}
+
+.successful-password-popup-des {
+  font-size: 1.25rem;
+  
+}
+
+.successful-password-popup.active .successful-password-popup-options {
+  visibility: visible;
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.successful-password-popup-des {
+  text-align: center;
+}
+.back-to-login{
+  text-align: center;
+  text-decoration-line: underline;
+  color: #4B0082;
+}
+
+/* Dynamic css */
+.inputfocus{
+  border-color: #4b0082;
+  color: black;
+}
+}
